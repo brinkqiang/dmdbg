@@ -1,3 +1,7 @@
 
+#ifndef DMDBG_H
+#define DMDBG_H
+
 #include "dbg.h"
-#include "dmformat.h"
+
+#endif  // DMDBG_H
