@@ -10,7 +10,7 @@
 #include <tuple>
 #include <vector>
 
-#include <dmdbg.h>
+#include "dmdbg.h"
 
 #if DBG_MACRO_CXX_STANDARD >= 17
 #include <optional>
