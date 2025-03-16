@@ -1,7 +1,7 @@
 #include "dmdbg.h"
 #include <cstdint>
 #include <vector>
-
+#include <map>
 // You can use "dbg(..)" in expressions:
 int32_t factorial(int32_t n) {
   if (dbg(n <= 1)) {
@@ -25,5 +25,8 @@ int main() {
 
   factorial(4);
 
+  std::map<int32_t, int32_t> map{{1, 2}, {3, 4}};
+
+  dbg(map);  // [example.cpp:28 (main)] map = {{1, 2}, {3, 4}} (std::map<int32_t, int32_t>)
   return 0;
 }
