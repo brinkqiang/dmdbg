@@ -14,11 +14,6 @@ InterfaceImport("dmdbg" "include" "")
 
 if (PROJECT_IS_TOP_LEVEL)
 
-    ADD_EXECUTABLE(demo 
-    tests/demo/demo.cpp)
-    TARGET_LINK_LIBRARIES(demo dmdbg)
-    ADD_EXECUTABLE(example 
-    tests/example/example.cpp)
-    TARGET_LINK_LIBRARIES(example dmdbg)
+    ExeImport("tests" "dmdbg")
 endif(PROJECT_IS_TOP_LEVEL)
 
